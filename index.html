@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light sticky-top">
+    <div class="container-fluid header">
+      <button class="navbar-toggler toggler-btn" type="button" onclick="togglerrotate(this)" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </button>
+      <a class="navbar-brand ml" href="#">
+        <i class="fa fa-stack-overflow"></i>
+        Stack <strong class="brand-symbol">Overflow</strong></a>
+      <div class="horiz-navbar">
+        <a class="horiz-link" href="#">About</a>
+        <a class="horiz-link" href="#">Products</a>
+        <a class="horiz-link" href="#">For Teams</a>
+      </div>
+      <form class="search-form">
+        <input class="search-box" type="search" placeholder="Search" maxlength="240">
+        <button class="login-btn"><a class="login-link" href="#">Log in</a></button>
+        <button class="signup-btn"><a class="signup-link" href="#">Sign up</a></button>
+      </form>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <div class="public">
+            PUBLIC
+          </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-globe"></i> Stack Overflow</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link margin-for-links" href="#">Tags</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link margin-for-links" href="#">Users</a>
+          </li>
+          <div class="public">
+            FIND A JOB
+          </div>
+          <li class="nav-item">
+            <a class="nav-link margin-for-links" href="#">Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link margin-for-links" href="#">Companies</a>
+          </li>
+          <div class="public">
+            TEAMS
+            <P class="on-sameline">
+              What's this?
+            </P>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-users"></i> Create a Team</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- home section -->
+  <div class="container-fluid home-section">
+    <div class="home-bg" style="background-image:url(stackoverflow.svg)">
+      <h1 class="home-heading">We <span class="home-lessthan3">
+          <3 </span> people who code</h1>
+      <p class="home-para">We build products that empower developers and connect them to solutions that enable productivity, growth, and discovery.</p>
+      <div class="btn-container">
+        <a class="developer-bdr" href=#developers-section>For developers</a>
+        <a class="bussiness-bdr" href=#bussiness-section>For bussiness</a>
+      </div>
+    </div>
+  </div>
+  <!-- developer section -->
+  <section class="developers-class" id="developers-section">
+    <h2 class="developers-heading">For developers, by developers</h2>
+    <div class="orange-bar">
+    </div>
+    <p class="developer-para">Stack Overflow is an <a class="developer-para-href-color" href="#">open community</a> for anyone that codes. We help you get answers to your toughest coding questions, share knowledge with your coworkers in private, and
+      find your next dream job.</p>
+    <div class="container developer-flexcontainer">
+      <div class="developer-flex1">
+        <img class="df-img1" src="https://cdn.sstatic.net/Img/home/public-qa.svg?v=d82acaa7df9f">
+        <h4 class="df-title1">Public Q&amp;A</h4>
+        <p>
+          Get answers to more than 16.5 million questions and give back by sharing your knowledge with others.<a>Sign up</a> for an account.
+        </p>
+        <a class="df-link1 df-link" href="#">Browse questions</a>
+      </div>
+      <div class="developer-flex2">
+        <img class="df-img2" src="https://cdn.sstatic.net/Img/home/private-qa.svg?v=2c1de180b6d7">
+        <h4 class="df-title2">Private Q&amp;A</h4>
+        <p>
+          Level up with Stack Overflow while you work. Share knowledge privately with your coworkers using our flagship Q&A engine.
+        </p>
+        <a class="df-link2 df-link" href="#">Try for free</a>
+      </div>
+      <div class="developer-flex3">
+        <img class="df-img3" src="https://cdn.sstatic.net/Img/home/jobs.svg?v=931d6c0863ee">
+        <h4 class="df-title3">Browse jobs</h4>
+        <p>
+          Find the right job through high quality listings and search for roles based on title, technology stack, salary, location, and more.
+        </p>
+        <a class="df-link3 df-link" href="#">Find a Job</a>
+      </div>
+    </div>
+  </section>
+  <!-- bussiness section -->
+  <section class="bussiness-class" id="bussiness-section">
+    <h2 class="bussiness-heading">For businesses, by developers</h2>
+    <div class="orange-bar">
+    </div>
+    <p class="bussiness-para">Our mission is to help developers write the script of the future. This means helping you find and hire skilled developers for your business and providing them the tools they need to share knowledge and work effectively.
+    </p>
+    <div class="bussiness-flexcontainer">
+      <div class="bussiness-flex1">
+        <img class="bs-img1 bs-img" src="https://cdn.sstatic.net/Img/home/private-questions.svg?v=a4f1cfb08f7e" width="76">
+        <p class="bs-para1">
+          Quickly find and share internal knowledge with Private <a class="bs-link1 bs-link" href="#">Q&A</a>
+        </p>
+      </div>
+      <div class="bussiness-flex2">
+        <img class="bs-img2 bs-img" src="https://cdn.sstatic.net/Img/home/find-candidate.svg?v=9099aa106ad3" width="76">
+        <p class="bs-para2">
+          Find the perfect candidate for your growing technical team with <a class="bs-link2 bs-link" href="#">Talent solutions</a>
+        </p>
+      </div>
+      <div class="bussiness-flex3">
+        <img class="bs-img3 bs-img" src="https://cdn.sstatic.net/Img/home/accelerate.svg?v=9d4c2786ff02" width="76">
+        <p class="bs-para3">
+          Accelerate the discovery of your products or services through our <a class="bs-link3 bs-link" href="#">Advertising platform</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- price section -->
+  <section class="price-section">
+    <h2 class="price-heading">Unlock siloed knowledge with Stack Overflow for Teams</h2>
+    <p class="price-para">
+      Wikis, chat messages, or formal documentation for knowledge management aren’t effective. Our question and answer format is a proven approach for accessing the right information in less time.
+    </p>
+    <a class="price-link" href="#">Learn more</a>
+    <div class="price-cardscontainer" style="background:url('https://cdn.sstatic.net/Img/product/teams/illo-teams-pricing.svg?v=8afb8ac7c580')  no-repeat; width:100%; background-position: center;">
+
+      <div class="basic-flex">
+        <h2 class="basic-heading">Basic</h2>
+        <p class="basic-para">
+          Private knowledge base for teams
+        </p>
+        <span class="price">$6 USD</span>
+        <div class="price-my">
+          <span class="monthly-price">per teammate / month</span>
+          <input type="radio" name="Yearly" id="Yearly" value="Yearly" checked>
+          <label for="Yearly" class="yearly">Yearly</label>
+          <input type="radio" name="Monthly" id="Monthly" value="Monthly">
+          <label for="Monthly" class="monthly">Monthly</label>
+        </div>
+        <hr>
+        <!-- benefits -->
+        <div class="basic-r1">
+          <svg aria-hidden="true" class="svg-icon iconCalendar" width="18" height="18" viewBox="0 0 18 18">
+            <path d="M14 2h1a2 2 0 012 2v11a2 2 0 01-2 2H3a2 2 0 01-2-2V4c0-1.1.9-2 2-2h1V0h2v2h6V0h2v2zM3 6v9h12V6H3zm2 2h2v2H5V8zm0 3h2v2H5v-2zm3 0h2v2H8v-2zm3 0h2v2h-2v-2zm0-3h2v2h-2V8zM8 8h2v2H8V8z"></path>
+          </svg>
+          <p class="r1-text">
+            Free 30 day trial
+          </p>
+        </div>
+        <div class="basic-r1">
+          <svg aria-hidden="true" class="svg-icon iconBullhorn" width="18" height="18" viewBox="0 0 18 18">
+            <path d="M16 1a1 1 0 00-1 1v.38L5.3 6A2 2 0 004 7.9v2.22a2 2 0 001 1.74v1.65a3.5 3.5 0 006.87.95L15 15.63V16a1 1 0 102 0V2a1 1 0 00-1-1zM6.6 12.47l3.76 1.42a1.9 1.9 0 01-3.76-.39v-1.03zM2 6a1 1 0 00-1 1v4a1 1 0 102 0V7a1 1 0 00-1-1z">
+            </path>
+          </svg>
+          <p class="r1-text">
+            ChatOps integrations - Slack & Microsoft Teams
+          </p>
+        </div>
+        <div class="basic-r1">
+          <svg aria-hidden="true" class="svg-icon iconShield" width="18" height="18" viewBox="0 0 18 18">
+            <path d="M2 4l7-3 7 3v5.02C16 13.69 10.69 17 9 17c-1.69 0-7-3.31-7-7.98V4zm6.14 5.2L7 12h4L9.86 9.2a.58.58 0 01.25-.59c.56-.36.89-.95.89-1.61 0-1.09-.94-2-2.02-2A2 2 0 007 7c0 .66.33 1.25.89 1.61.2.13.3.36.25.59z"></path>
+          </svg>
+          <p class="r1-text">
+            Your own private space hosted on stackoverflow.com
+          </p>
+        </div>
+        <div class="basic-r1">
+          <svg aria-hidden="true" class="svg-icon iconArchive" width="18" height="18" viewBox="0 0 18 18">
+            <path d="M3 1a2 2 0 00-2 2v1h16V3a2 2 0 00-2-2H3zM2 5h14v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm4 3a1 1 0 001 1h4a1 1 0 100-2H7a1 1 0 00-1 1z"></path>
+          </svg>
+          <p class="r1-text">
+            Fully searchable archive
+          </p>
+        </div>
+        <div class="basic-btn">
+          <a href="#" class="freetrail">Start Your free trail</a>
+        </div>
+      </div>
+      <div class="bussiness-flex">
+        <div class="small-box">Most Used
+          <svg class="icon-smallbox" width="18" height="18" viewBox="0 0 18 18">
+            <path d="M10 16v-4H8v4H2V4c0-1.1.9-2 2-2h6a2 2 0 012 2v2h2a2 2 0 012 2v8h-6zM4 4v2h2V4H4zm0 4v2h2V8H4zm4-4v2h2V4H8zm0 4v2h2V8H8zm-4 4v2h2v-2H4zm8 0v2h2v-2h-2zm0-4v2h2V8h-2z"></path>
+          </svg>
+
+        </div>
+        <div class="big-box">
+          <h2 class="bussinessbigbox-heading">Bussiness</h2>
+          <p class="bussinessbigbox-para">
+            Private knowledge base with SSO and premium features
+          </p>
+          <span class="price">$12 USD</span>
+          <span class="monthly-price">per teammate / month</span>
+          <hr>
+          <!-- benefits -->
+          <div class="basic-r2">
+            <svg aria-hidden="true" class="svg-icon iconDocumentAlt" width="18" height="18" viewBox="0 0 18 18">
+              <path
+                d="M5 3a2 2 0 00-2 2v10c0 1.1.9 2 2 2h7a2 2 0 002-2V5a2 2 0 00-2-2H5zm2 3a1 1 0 11-2 0 1 1 0 012 0zm-2 4.5c0-.28.22-.5.5-.5h6a.5.5 0 010 1h-6a.5.5 0 01-.5-.5zm.5 1.5h6a.5.5 0 010 1h-6a.5.5 0 010-1zM5 14.5c0-.28.22-.5.5-.5h6a.5.5 0 010 1h-6a.5.5 0 01-.5-.5z">
+              </path>
+              <path opacity=".4" d="M5.9 2h6.35A2.75 2.75 0 0115 4.75v9.35c.62-.6 1-1.43 1-2.35v-7.5C16 2.45 14.54 1 12.75 1h-4.5c-.92 0-1.75.38-2.35 1z"></path>
+            </svg>
+            <p class="r2-text">
+              Long-form knowledge with Articles
+            </p>
+          </div>
+          <div class="basic-r2">
+            <svg aria-hidden="true" class="svg-icon iconBullhorn" width="18" height="18" viewBox="0 0 18 18">
+              <path d="M16 1a1 1 0 00-1 1v.38L5.3 6A2 2 0 004 7.9v2.22a2 2 0 001 1.74v1.65a3.5 3.5 0 006.87.95L15 15.63V16a1 1 0 102 0V2a1 1 0 00-1-1zM6.6 12.47l3.76 1.42a1.9 1.9 0 01-3.76-.39v-1.03zM2 6a1 1 0 00-1 1v4a1 1 0 102 0V7a1 1 0 00-1-1z">
+              </path>
+            </svg>
+            <p class="r2-text">
+              Additional integrations — ChatOps, Jira, GitHub & Okta
+            </p>
+          </div>
+          <div class="basic-r2">
+            <svg aria-hidden="true" class="svg-icon iconArchive" width="18" height="18" viewBox="0 0 18 18">
+              <path d="M3 1a2 2 0 00-2 2v1h16V3a2 2 0 00-2-2H3zM2 5h14v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm4 3a1 1 0 001 1h4a1 1 0 100-2H7a1 1 0 00-1 1z"></path>
+            </svg>
+            <p class="r2-text">
+              Group content together into Collections
+            </p>
+          </div>
+          <div class="basic-r2">
+            <svg aria-hidden="true" class="svg-icon iconKeySmall" width="18" height="18" viewBox="0 0 18 18">
+              <path d="M8.83 10a3 3 0 110-2H15v2h-2v2h-2v-2H8.83zM6 10.3a1.3 1.3 0 100-2.6 1.3 1.3 0 000 2.6z"></path>
+            </svg>
+            <p class="r2-text">
+              Single sign-on (SSO) with SAML
+            </p>
+          </div>
+          <div class="basic-r2">
+            <svg aria-hidden="true" class="svg-icon iconGraph" width="18" height="18" viewBox="0 0 18 18">
+              <path d="M3 1h12a2 2 0 012 2v12a2 2 0 01-2 2H3a2 2 0 01-2-2V3c0-1.1.9-2 2-2zm1 8v5h2V9H4zm4-5v10h2V4H8zm4 3v7h2V7h-2z"></path>
+            </svg>
+            <p class="r2-text">
+              Reporting and analytics
+            </p>
+          </div>
+          <div class="basic-r2">
+            <svg aria-hidden="true" class="svg-icon iconHealth" width="18" height="18" viewBox="0 0 18 18">
+              <path d="M9 1L2 4v5.02C2 13.69 7.31 17 9 17c1.69 0 7-3.31 7-7.98V4L9 1zm1 9v3H8v-3H5V8h3V5h2v3h3v2h-3z"></path>
+            </svg>
+            <p class="r2-text">
+              Priority customer support
+            </p>
+          </div>
+          <div class="basic-r2">
+            <svg aria-hidden="true" class="svg-icon iconStar" width="18" height="18" viewBox="0 0 18 18">
+              <path
+                d="M8.63.95a.4.4 0 01.74 0l2.05 4.93a.4.4 0 00.34.24l5.32.43c.35.03.5.47.22.7l-4.05 3.47a.4.4 0 00-.13.4l1.24 5.2a.4.4 0 01-.6.43l-4.55-2.79a.4.4 0 00-.42 0l-4.55 2.79a.4.4 0 01-.6-.44l1.24-5.19a.4.4 0 00-.13-.4L.7 7.25a.4.4 0 01.22-.7l5.32-.43a.4.4 0 00.34-.24L8.63.95z">
+              </path>
+            </svg>
+            <p class="r2-text">
+              99.5% uptime
+            </p>
+          </div>
+          <div class="bussiness-btn">
+            <a href="#" class="getstarted">Get Started</a>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="enterprise-flex">
+        <h2 class="enterprise-heading">Enterprise</h2>
+        <p class="enterprise-para">
+          Standalone knowledge base with enhanced security and flexible hosting
+        </p>
+        <span class="price">Custom pricing</span>
+        <span class="monthly-price">Let’s talk about what you need</span>
+        <hr>
+        <div class="basic-r3">
+          <svg aria-hidden="true" class="svg-icon iconPlus" width="18" height="18" viewBox="0 0 18 18">
+            <path d="M10 2H8v6H2v2h6v6h2v-6h6V8h-6V2z"></path>
+          </svg>
+          <p class="r3-text">
+            Premium features of Business plus...
+          </p>
+        </div>
+        <div class="basic-r3">
+          <svg aria-hidden="true" class="svg-icon iconBullhorn" width="18" height="18" viewBox="0 0 18 18">
+            <path d="M16 1a1 1 0 00-1 1v.38L5.3 6A2 2 0 004 7.9v2.22a2 2 0 001 1.74v1.65a3.5 3.5 0 006.87.95L15 15.63V16a1 1 0 102 0V2a1 1 0 00-1-1zM6.6 12.47l3.76 1.42a1.9 1.9 0 01-3.76-.39v-1.03zM2 6a1 1 0 00-1 1v4a1 1 0 102 0V7a1 1 0 00-1-1z">
+            </path>
+          </svg>
+          <p class="r3-text">
+            ChatOps, Jira, GitHub & Okta integrations
+          </p>
+        </div>
+        <div class="basic-r3">
+          <svg aria-hidden="true" class="svg-icon iconPeople" width="18" height="18" viewBox="0 0 18 18">
+            <path
+              d="M17 14c0 .44-.45 1-1 1H9a1 1 0 01-1-1H2c-.54 0-1-.56-1-1 0-2.63 3-4 3-4s.23-.4 0-1c-.84-.62-1.06-.59-1-3 .06-2.42 1.37-3 2.5-3s2.44.58 2.5 3c.06 2.41-.16 2.38-1 3-.23.59 0 1 0 1s1.55.71 2.42 2.09c.78-.72 1.58-1.1 1.58-1.1s.23-.4 0-1c-.84-.61-1.06-.58-1-3 .06-2.41 1.37-3 2.5-3s2.44.59 2.5 3c.05 2.42-.16 2.39-1 3-.23.6 0 1 0 1s3 1.38 3 4z">
+            </path>
+          </svg>
+          <p class="r3-text">
+            Unlimited Teams within your instance
+          </p>
+        </div>
+        <div class="basic-r3">
+          <svg aria-hidden="true" class="svg-icon iconKeySmall" width="18" height="18" viewBox="0 0 18 18">
+            <path d="M8.83 10a3 3 0 110-2H15v2h-2v2h-2v-2H8.83zM6 10.3a1.3 1.3 0 100-2.6 1.3 1.3 0 000 2.6z"></path>
+          </svg>
+          <p class="r3-text">
+            Single sign-on with AD or SAML
+
+          </p>
+        </div>
+        <div class="basic-r3">
+          <svg aria-hidden="true" class="svg-icon iconPeak" width="18" height="18" viewBox="0 0 18 18">
+            <path d="M10.5 3.5L8 7.25l2 2.25L8.5 11l-3-3.5L1 14h16L10.5 3.5z"></path>
+          </svg>
+          <p class="r3-text">
+            Flexible hosting options — cloud or on-premises
+          </p>
+        </div>
+        <div class="basic-r3">
+          <svg aria-hidden="true" class="svg-icon iconCode" width="18" height="18" viewBox="0 0 18 18">
+            <path d="M8 4.41L6.59 3l-6 6 6 6L8 13.59 3.41 9 8 4.41zm2 0L11.41 3l6 6-6 6L10 13.59 14.59 9 10 4.41z"></path>
+          </svg>
+          <p class="r3-text">
+            Robust read and write API
+          </p>
+        </div>
+        <div class="basic-r3">
+          <svg aria-hidden="true" class="svg-icon iconSpeechBubbleQuestion" width="18" height="18" viewBox="0 0 18 18">
+            <path
+              d="M1 17l3-3h11c1.09 0 2-.91 2-2V3c0-1.09-.91-2-2-2H3a2 2 0 00-2 2v14zm7.96-4.94c-.57-.02-1.03-.43-1.01-1.06.02-.63.5-1.04 1.08-1.02.6.02 1.05.45 1.03 1.08-.02.63-.48 1.02-1.1 1zm.92-3.68a3.6 3.6 0 00-.08.65c0 .04-.03.14-.16.14h-1.4c-.14 0-.16-.09-.16-.13-.01-.5.11-.99.36-1.42.2-.36.58-.65 1.06-.93.41-.23.78-.71.78-1.2 0-.27-.09-.53-.26-.74-.22-.26-.46-.4-.92-.4-.45 0-.83.23-1.02.52-.17.27-.16.55-.16.83v.11H6.2c0-1.17.31-1.92.98-2.36a3.5 3.5 0 011.83-.44c.88 0 1.58.16 2.2.62.58.42.88 1.02.88 1.82 0 .5-.17.9-.43 1.24-.15.2-.44.47-.86.8l-.48.3c-.2.14-.36.35-.44.6z">
+            </path>
+          </svg>
+          <p class="r3-text">
+            Your own customer success and community building representative
+          </p>
+        </div>
+        <div class="basic-r3">
+          <svg aria-hidden="true" class="svg-icon iconStar" width="18" height="18" viewBox="0 0 18 18">
+            <path
+              d="M8.63.95a.4.4 0 01.74 0l2.05 4.93a.4.4 0 00.34.24l5.32.43c.35.03.5.47.22.7l-4.05 3.47a.4.4 0 00-.13.4l1.24 5.2a.4.4 0 01-.6.43l-4.55-2.79a.4.4 0 00-.42 0l-4.55 2.79a.4.4 0 01-.6-.44l1.24-5.19a.4.4 0 00-.13-.4L.7 7.25a.4.4 0 01.22-.7l5.32-.43a.4.4 0 00.34-.24L8.63.95z">
+            </path>
+          </svg>
+          <p class="r3-text">
+            99.5% uptime SLA and priority support
+          </p>
+        </div>
+
+
+        <div class="enterprise-btn">
+          <a href="#" class="requestdemo">Request a Demo</a>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="links-below-cards">
+      <a href="#" class="one-link">
+        <img class="padding-links" src="https://cdn.sstatic.net/Img/product/teams/endorsements/g2.svg?v=670bf9279910" height="35" alt="G2">
+        <strong class="bold-link">Leader</strong>
+        Winter 2021
+
+      </a>
+      <a href="#" class="one-link">
+        <img class="padding-links" src="https://cdn.sstatic.net/Img/product/teams/endorsements/g2.svg?v=670bf9279910" height="35" alt="G2">
+        <strong class="bold-link">Users Love Us</strong>
+      </a>
+
+    </div>
+
+  </section>
+  <!-- Advertising and talent -->
+  <section class="advertising-talent">
+    <div class="row advertising-talent-margin" style="justify-content:center;">
+
+      <div class="col-lg-4 col-sm-6 col-xs-12 ratm">
+        <img class="talent-image atm" src="https://cdn.sstatic.net/Img/home/find-candidate.svg?v=9099aa106ad3" width="76">
+        <h4 class="talent-heading atm">Hire your technical talent</h4>
+        <p class="talent-para atm">We help expand your technical hiring strategy to promote your employer brand and highlight relevant open roles to our community of over 100 million developers and technologists.</p>
+        <a href="#" class="talent-button atm">Stack Overflow Talent
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+        <img class="advertising-image atm" src="https://cdn.sstatic.net/Img/home/accelerate.svg?v=9d4c2786ff02" width="76">
+        <h4 class="advertising-heading atm">Reach developers worldwide</h4>
+        <p class="advertising-para atm">Use the world’s largest resource for people who code to help you increase awareness and showcase your product or service across Stack Overflow’s network of Q&amp;A sites.</p>
+        <a href="#" class="advertising-button atm">Stack Overflow Advertising
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- questions and carousel section  -->
+  <section class="carousel-questions">
+    <h3 class="carousel-heading">Questions are everywhere, answers are on Stack Overflow</h3>
+    <div class="carousel-container row" style="justify-content: center;">
+      <!-- <div class="col-lg-2">
+
+      </div> -->
+      <div class="question-123 col-lg-2 col-md-3 col-sm-12">
+        <input class="ques" type="radio" id="q1" name="questions" checked>
+        <label for="q1" class="questions q1">
+          <img src="https://cdn.sstatic.net/Img/home/ask-a-question.svg?v=f4f2050b0297" class="center-qi" width="46">
+          Ask a question</label>
+        <input class="ques" type="radio" id="q2" name="questions">
+        <label for="q2" class="questions q2">
+          <img src="https://cdn.sstatic.net/Img/home/votes.svg?v=748a8f48a8e2" class="center-qi" width="46">
+          Vote on everything</label>
+        <input class="ques" type="radio" id="q3" name="questions">
+        <label for="q3" class="questions q3">
+          <img src="https://cdn.sstatic.net/Img/home/answer.svg?v=4cd8048a676c" class="center-qi" width="46">
+          Answer questions</label>
+      </div>
+      <!-- <div class="reverse-carousel"> -->
+        <div class="carousel-images col-lg-4 col-md-6 col-sm-12" style="text-align:center;">
+          <img width="500" src="https://cdn.sstatic.net/Img/home/illo-feats-ask.svg?v=b6cd07f0765a" class="qi">
+          <h4 class="qh">
+            Ask a question publicly on 170+ Stack Exchange sites or privately using Stack Overflow for Teams.
+          </h4>
+          <!-- <a class="qb" href="#">Create an account</a> -->
+          <button class="qb">Create an account</button>
+
+        </div>
+        <div class="question-456 col-lg-2 col-md-3 col-sm-12">
+          <input class="ques" type="radio" id="q4" name="questions">
+          <label for="q4" class="questions q4">
+            <img src="https://cdn.sstatic.net/Img/home/tags.svg?v=913379eb09eb" class="center-qi" width="46">
+            Tag your question</label>
+          <input class="ques" type="radio" id="q5" name="questions">
+          <label for="q5" class="questions q5">
+            <img src="https://cdn.sstatic.net/Img/home/accept.svg?v=27d5be078970" class="center-qi" width="46">
+            Accept an answer</label>
+          <input class="ques" type="radio" id="q6" name="questions">
+          <label for="q6" class="questions q6">
+            <img src="https://cdn.sstatic.net/Img/home/get-recognized.svg?v=3b339d9aa10c" class="center-qi" width="46">
+            Get recognized</label>
+        </div>
+      <!-- </div> -->
+      <!-- <div class="col-lg-2">
+
+      </div> -->
+    </div>
+
+  </section>
+  <!-- learn and grow section -->
+  <h3 class="lg-heading">Learn and grow with Stack Overflow</h3>
+  <div class="row container-fluid lg">
+    <!-- <div class="col-2">
+
+    </div> -->
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img class="lg-img" width="175" height="151" src="https://cdn.sstatic.net/Img/home/developer.svg?v=b930de7967a7">
+      <h4 class="lg-h">Write the script of the future</h4>
+      <p class="lg-p">
+        Get your coding questions answered to learn, build, and level up whether you’re beginning with
+        <a href="#" class="lg-a1">JavaScript</a> or a
+        <a href="#" class="lg-a1">React</a> professional.
+      </p>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img class="lg-img" width="169" height="151" src="https://cdn.sstatic.net/Img/home/open-source.svg?v=847b604fd2ab">
+      <h4 class="lg-h">Support open source</h4>
+      <p class="lg-p">Reach users of your project by following tags, answering newcomer questions, and empowering experts in the community.
+        <a href="#" class="lg-a1">Read the curl project creator’s story</a>.
+      </p>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img class="lg-img" width="176" height="151" src="https://cdn.sstatic.net/Img/home/advocate.svg?v=4b03cfb93502">
+      <h4 class="lg-h">Acquire and share knowledge</h4>
+      <p class="lg-p">Answer questions and <a href="https://insights.stackoverflow.com/" class="lg-a1">gain insights</a> from an audience of developers using your technology on Stack Overflow.</p>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img class="lg-img" width="209" height="151" src="https://cdn.sstatic.net/Img/home/career-switcher.svg?v=a41416ff19df">
+      <h4 class="lg-h">Find career opportunities</h4>
+      <p class="lg-p">Create a profile that shows off your expertise and credentials to help you make your next move. Start your <a href="#" class="lg-a1">Developer Story</a>.</p>
+    </div>
+    <!-- <div class="col-2">
+
+    </div> -->
+  </div>
+  <!-- looking for a job section -->
+  <section class="job-section">
+    <div class="job-container">
+      <h3 class="job-heading">Looking for a job?</h3>
+      <div class=" container-fluid jobcards-group">
+        <div class="jc">
+          <img class="job-img" width="50" src="https://cdn.sstatic.net/Img/home/jobs-tech.svg?v=42f011c01763">
+          <span class="job-para">
+            Browse jobs by technology
+          </span>
+        </div>
+        <div class="jc">
+          <img class="job-img" width="50" src="https://cdn.sstatic.net/Img/home/jobs-salary.svg?v=401840ff8931">
+          <span class="job-para">
+            Browse jobs by salary
+          </span>
+        </div>
+        <div class="jc">
+          <img class="job-img" width="50" src="https://cdn.sstatic.net/Img/home/jobs-visa.svg?v=1f3acc6dc772">
+          <span class="job-para">
+            Browse jobs by visa sponsorship
+          </span>
+        </div>
+        <div class="jc">
+          <img class="job-img" width="50" src="https://cdn.sstatic.net/Img/home/jobs-remote.svg?v=a4b4d1b5a80c">
+          <span class="job-para">
+            Browse remote-friendly jobs
+          </span>
+        </div>
+        <div class="job-btn-container">
+          <button class="job-btn">View all jobs</button>
+        </div>
+
+      </div>
+    </div>
+    <img class="job-robot" width="51" src="https://cdn.sstatic.net/Img/home/robot.svg?v=dfa16a330cbd">
+  </section>
+  <footer class="fs">
+    <div class="fs-container container">
+      <div class="footer-logo">
+        <a href="https://stackoverflow.com/"><svg aria-hidden="true" class="svg-icon" width="32" height="37" viewBox="0 0 32 37">
+            <path d="M26 33v-9h4v13H0V24h4v9h22z" fill="#BCBBBB"></path>
+            <path d="M21.5 0l-2.7 2 9.9 13.3 2.7-2L21.5 0zM26 18.4L13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5zM9.1 15.2l15 7 1.4-3-15-7-1.4 3zm14 10.79l.68-2.95-16.1-3.35L7 23l16.1 2.99zM23 30H7v-3h16v3z" fill="#F48024"></path>
+          </svg></a>
+      </div>
+      <div class="footer-titles">
+        <div class="fc-1 fc">
+          <h5 class="fh"><a href="https://stackoverflow.com/" class="falink">Stack Overflow</a></h5>
+          <ul style="padding-left:0px;">
+            <li class="li-list"><a href="#" class="li-links">Questions</a></li>
+            <li class="li-list"><a href="#" class="li-links">Jobs</a></li>
+            <li class="li-list"><a href="#" class="li-links">Developer Jobs Directory</a></li>
+            <li class="li-list"><a href="#" class="li-links">Salary Calculator</a></li>
+            <li class="li-list"><a href="#" class="li-links">Help</a></li>
+            <li class="li-list"><a href="#" class="li-links">Mobile</a></li>
+            <li class="li-list"><a href="#" class="li-links">Disable Responsiveness</a></li>
+            <li class="li-list"><a href="#" class="li-links">Disable Responsiveness</a></li>
+          </ul>
+        </div>
+        <div class="fc-2 fc">
+          <h5 class="fh"><a href="https://stackoverflowbusiness.com/" class="falink">Products</a></h5>
+          <ul style="padding-left:0px;">
+            <li class="li-list"><a href="#" class="li-links">Teams</a></li>
+            <li class="li-list"><a href="#" class="li-links">Talent</a></li>
+            <li class="li-list"><a href="#" class="li-links">Advertising</a></li>
+            <li class="li-list"><a href="#" class="li-links">Enterprise</a></li>
+          </ul>
+        </div>
+        <div class="fc-3 fc">
+          <h5 class="fh"><a class="falink" href="https://stackoverflow.com/company">Company</a></h5>
+          <ul style="padding-left:0px;">
+            <li class="li-list"><a href="#" class="li-links">About</a></li>
+            <li class="li-list"><a href="#" class="li-links">Press</a></li>
+            <li class="li-list"><a href="#" class="li-links">Work Here</a></li>
+            <li class="li-list"><a href="#" class="li-links">Legal</a></li>
+            <li class="li-list"><a href="#" class="li-links">Privacy Policy</a></li>
+            <li class="li-list"><a href="#" class="li-links">Terms of Service</a></li>
+            <li class="li-list"><a href="#" class="li-links">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="fc-4 fc">
+          <h5 class="fh"><a href="https://stackexchange.com/" class="falink">Stack Exchange<br> Network</a></h5>
+          <ul style="padding-left:0px;">
+            <li class="li-list"><a href="#" class="li-links">Technology</a></li>
+            <li class="li-list"><a href="#" class="li-links">Life/Arts</a></li>
+            <li class="li-list"><a href="#" class="li-links">Culture/Recreation</a></li>
+            <li class="li-list"><a href="#" class="li-links">Science</a></li>
+            <li class="li-list"><a href="#" class="li-links">other</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-socialmedia">
+        <ul class="ul-flex" style="padding-left:0px;">>
+          <li class="li-list"><a href="#" class="li-links">Blog</a></li>
+          <li class="li-list"><a href="#" class="li-links">Facebook</a></li>
+          <li class="li-list"><a href="#" class="li-links">Twitter</a></li>
+          <li class="li-list"><a href="#" class="li-links">LinkedIn</a></li>
+          <li class="li-list"><a href="#" class="li-links">Instagram</a></li>
+        </ul>
+        <p class="footer-iconpara">
+          site design / logo © 2021 Stack Exchange Inc; user contributions licensed under cc by-sa. <span id="svnrev">rev&nbsp;2021.3.9.38752</span>
+        </p>
+      </div>
+    </div>
+
+
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- js files -->
+  <script src="index.js"></script>
+</body>
+
+</html>

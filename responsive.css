@@ -1,0 +1,161 @@
+/* footer section */
+@media (max-width:1200px) {
+  .fc{
+    width: 150px;
+  }
+
+}
+@media (max-width:992px) {
+  .fs-container{
+    flex-wrap: wrap;
+  }
+
+}
+@media (max-width:768px) {
+  .footer-titles{
+    flex-wrap: wrap;
+  }
+
+}
+@media (max-width:1500px){
+  .jc{
+    margin: 20px;
+  }
+  .job-btn-container{
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width:1500px){
+  .job-heading{
+    text-align: center;
+  }
+  .carousel-container{
+    justify-content: space-around !important;
+  }
+}
+@media (max-width:1050px){
+
+  .qi{
+    width: 400px !important
+  }
+}
+@media (max-width:768px){
+  .questions{
+    display: inline-grid;
+    width: fit-content;
+  }
+  .center-qi{
+    margin: 0 auto;
+  }
+  .question-123{
+    order: 1;
+    text-align: center;
+  }
+  .carousel-images{
+    order: 3;
+  }
+  .question-456{
+    order: 2;
+    text-align: center;
+  }
+}
+@media (max-width:580px){
+  .ratm{
+    margin-bottom: 20px;
+  }
+}
+@media (max-width:1286px) {
+  .bussiness-flexcontainer>div {
+    margin: 20px 20px;
+  }
+
+.developer-flexcontainer>div{
+  margin: 20px;
+}
+
+}
+@media (max-width:660px) {
+  .btn-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .developer-bdr{
+    margin-bottom: 10px;
+  }
+  .home-bg{
+    background-image: url("https://cdn.sstatic.net/Img/home/illo-hero-small.svg?v=884735d21ea5") !important;
+  }
+  .home-heading{
+    font-size: 2rem;
+  }
+}
+@media (max-width:1200px){
+  .search-box{
+    width: 300px;
+  }
+}
+@media (min-width:816px) and (max-width:1200px){
+  .search-box{
+    width: 150px;
+  }
+}
+@media (max-width:680px){
+  .search-box{
+    width: 150px;
+  }
+}
+@media (max-width:580px){
+  .search-box{
+    display: none;
+  }
+  .header{
+    justify-content: flex-start !important;
+  }
+  .search-form{
+    margin-left: auto;
+    padding: 0 5px;
+  }
+}
+@media (max-width:816px){
+  .horiz-navbar{
+    display: none;
+  }
+}
+@media (max-width:386px){
+  .search-form{
+    margin: 0;
+  }
+  .ml{
+    margin-right: 0;
+  }
+}
+@media (max-width:386px){
+  .brand-symbol{
+    display: none;
+  }
+  .ml{
+    visibility: hidden;
+  }
+  .fa{
+    visibility: visible;
+  }
+}
+@media (max-width:420px){
+  .qi{
+    width: 300px !important;
+  }
+}
+@media (max-width:320px){
+  .qi{
+    width: 150px !important;
+  }
+}
+@media (max-width:360px){
+  .developer-flex1,.developer-flex2,.developer-flex3{
+    height: 400px;
+  }
+  .bussiness-flexcontainer>div{
+    padding: 16px;
+  }
+}
