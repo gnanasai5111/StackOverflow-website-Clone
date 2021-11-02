@@ -28,12 +28,12 @@ $(".qh").text("Our reputation system rewards both the new & experienced based on
 });
 function rangeOfNumbers(startNum, endNum) {
   if (endNum - startNum == 0){
-    alert(startNum);
+
     return [startNum];
   } else {
     var numbers = rangeOfNumbers(startNum, endNum - 1);
   numbers.push(endNum);
-  alert(endNum);
+
     return numbers;
   }
 }
